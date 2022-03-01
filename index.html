@@ -1,24 +1,49 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 </head>
-<body>
-    <h1 class="heading"> 
-<img class="logo" src="assets/images/logo.png" alt="picture of heart with symbols"> Love Maths
-     </h1>   
-<div class="game-area"> The Game border</div>
 
-    <div class ="score-area">
-    <p class="scores">Correct Answers <span id="score">0</span></p>
-    <p class="scores">Incorrect Answer<span id="incorrect">0</span></p>
-</div>
+<body>
+    <h1 class="heading">
+        <img class="logo" src="assets/images/logo.png" alt="picture of heart with symbols"> Love Maths
+    </h1>
+    <div class="game-area"> The Game border
+        <div class="control-area">
+            <button class="btn btn--big btn--green"><i class="fas fa-plus"> </i></button>
+            <button class="btn btn--big btn--green"><i class="fas fa-minus"> </i></button>
+            <button class="btn btn--big btn--green"><i class="fas fa-times"> </i></button>
+            <button class="btn btn--big btn--green"><i class="fas fa-divide"> </i></button>
+
+        </div>
+
+        <div class="question-area">
+            <span id="operand1">0 </span>
+            <span id="operand2">x </span>
+            <span id="operand3">0 </span>
+            <span>=</span>
+
+            <p class="answer"> Enter answer</p>
+            <input type="number" id="answer-box">
+        </div>
+        
+        <button class="btn btn--gray">submit answer</button>
+    </div>
+    
+
+    <div class="score-area">
+        <p class="scores">Correct Answers <span id="score">0</span></p>
+        <p class="scores">Incorrect Answer<span id="incorrect">0</span></p>
+    </div>
 
     <script src="assets/javascript/script.js"> </script>
 </body>
+
 </html>
